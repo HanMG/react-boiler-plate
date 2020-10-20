@@ -1,0 +1,3 @@
+1. npm init으로 초기 설정
+2. npm i express --save 로 express 서버 다운
+3. npm i mongoose --save / mongoDB와 연결하기위해 mongoose다운
