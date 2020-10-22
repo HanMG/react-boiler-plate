@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 const config = require('./config/key')
 
 // userModel
-const { User } = require("./models/user")
+const { User } = require("./models/User")
 
 // application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: true}))
@@ -24,13 +24,13 @@ mongoose.connect(config.mongoURI,{
 
 
 
-app.get('/', (req, res) => res.send('Hello World'))
+app.get('/', (req, res) => res.send('Hello, It is default Page'))
 
 
 app.post('/register',(req, res) => {
     // 회원 가입 할때 필요한 정보들을 client에서 가져오면
     // 그것들을 DB에 넣어준다.    
-    const user = User(req.body)
+    const user = User(req.body)    
 
     user.save((err, userInfo) =>{
         if(err) return res.json({ success: false, err})

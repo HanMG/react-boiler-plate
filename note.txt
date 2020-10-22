@@ -1,3 +1,6 @@
 1. npm init으로 초기 설정
 2. npm i express --save 로 express 서버 다운
 3. npm i mongoose --save / mongoDB와 연결하기위해 mongoose다운
+4. npm i body-parser --save / data(json)전달을 위해서
+5. npm i nodemon --save-dev / 변화마다 서버 껏다켯다 안해도 되도록 , 개발용이라 -dev
+6. npm i bcrypt --save / 비밀번호 암호화
