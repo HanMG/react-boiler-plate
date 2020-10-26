@@ -9,7 +9,8 @@ server
 8. npm i cookie-parser --save / 쿠키에 토큰을 저장하기위해
 
 client
-1.npx create-react-app . / .를 붙이는 이유는 현재폴더에 설치한다는 뜻이라고함
+1. npx create-react-app . / .를 붙이는 이유는 현재폴더에 설치한다는 뜻이라고함
+2. npm i react-router-dom --save
 
 src만 webpack이 관리
 
