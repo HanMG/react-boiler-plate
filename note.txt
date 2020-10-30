@@ -14,6 +14,7 @@ client
 3. npm i axios --save / AJAX와 같은 처리를 위해
 4. npm i http-proxy-middleware --save / proxy처리
 5. npm i concurrently --save / client와 server 연달아 서버 킬때 사용
+6. npm i redux react-redux redux-promise redux-thunk
 
 src만 webpack이 관리
 
@@ -28,3 +29,13 @@ CORS (Cross-Orgin REsource Sharing) 정책
 
 CORS 해결
 proxy, jsonp 으로 처리 할수있다함. 여기선 middleware사용
+
+Redux 
+state를 관리 
+한방향 FLOW : React Component -> Dispatch(action) -> ACTION -> REDUCER -> STORE -> React Component
+
+redux-promise, redux-thunk (redux를 위한 미들웨어)
+redux store는 plain object만 dispatching 가능한데 promise, function 형태로 넘어올때도 있다고함.
+redux thunk는 function를 처리하는 방법을 알려주고,
+redux promise는 promise가 왔을때 어떻게 처리해야할지 알려준다함.
+
