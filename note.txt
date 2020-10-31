@@ -39,3 +39,15 @@ redux store는 plain object만 dispatching 가능한데 promise, function 형태
 redux thunk는 function를 처리하는 방법을 알려주고,
 redux promise는 promise가 왔을때 어떻게 처리해야할지 알려준다함.
 
+React Component
+class Component / functional Component 로 구분할 수 있음.
+class Component : functional Component에 비해 많은 기능, 긴 코드, 상대적으로 느린 퍼포먼스
+functional Component : class component에 비해 적은 기능, 짧은 코드, 빠른 퍼포먼스
+
+react 16.8이후로 hook(useEffect, useState)을 통해 functional에서도 기능이 부족하지않아졌음
+
+Formik, Yup
+
+
+
+
