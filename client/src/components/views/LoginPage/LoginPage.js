@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {loginUser} from '../../../_actions/user_action';
-import {withRouter} from 'react-router-dom';
 
 function LoginPage(props){
 
@@ -20,7 +19,7 @@ function LoginPage(props){
 
     const onSubmitHandler = (event) =>{
         event.preventDefault();
-
+        //console.log(Email, Password)
         let body = {
             email: Email,
             password: Password
@@ -46,7 +45,7 @@ function LoginPage(props){
                 <label>Password</label>
                 <input type="password" value={Password} onChange={onPasswordHandler} />
                 <br/>
-                <button>
+                <button type="submit">
                     Login
                 </button>
             </form>
@@ -54,4 +53,4 @@ function LoginPage(props){
     );
 };
 
-export default withRouter(LoginPage);
+export default LoginPage
